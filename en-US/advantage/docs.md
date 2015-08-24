@@ -179,6 +179,7 @@ Your API document is available now. Open your browser and check it.
 ## Problems You May Have
 1. CORS
 	Two solutions
+
 	1. Integrate `swagger` into the application. Download [swagger](https://github.com/beego/swagger/releases) and put it into project folder. (`bee run -downdoc=true` will also download it and put it into project folder)
 	And before 	`beego.Run()` in `func main()` of `main.go`
 
@@ -188,6 +189,7 @@ Your API document is available now. Open your browser and check it.
 		}
 
 	And then visit `swagger` document from API project's URL and port.
+	
 	2. Make API support CORS
 
 			ctx.Output.Header("Access-Control-Allow-Origin", "*")
